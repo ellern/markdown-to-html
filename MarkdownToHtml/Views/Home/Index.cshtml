@@ -1,0 +1,70 @@
+﻿<div class="jumbotron">
+    <h1>Markdown to HTML</h1>
+    <p class="lead">Fetches a markdown file and prints out the resulting html using GitHub's markdown API</p>
+
+    <form action="/" method="post" class="form-horizontal text-left">
+        <input type="hidden" name="type" value="public" />
+        <div class="form-group">
+            <label class="control-label col-sm-3">Markdown URL</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" name="url" required />
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <p>
+                <button type="submit" class="btn btn-lg btn-success">Start</button>
+            </p>
+        </div>
+    </form>
+
+    <p class="lead">... or fetch from a private GitHub repository</p>
+
+    <form action="/" method="post" class="form-horizontal text-left">
+        <input type="hidden" name="type" value="private" />
+        <div class="form-group">
+            <label class="control-label col-sm-2">Owner</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="owner" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Repository</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="repo" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Path</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="path" value="README.md" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">API Token</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="token" value="" required />
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <p>
+                <button type="submit" class="btn btn-lg btn-success">Start</button>
+            </p>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <p class="text-muted text-center">
+            No information is stored on the server. Source code is availble on <a href="http://github.com/ellern/markdown-to-html">GitHub</a>.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <iframe src="http://ghbtns.com/github-btn.html?user=ellern&amp;repo=markdown-to-html&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="104px" height="20px"></iframe>
+        <iframe src="http://ghbtns.com/github-btn.html?user=ellern&amp;repo=markdown-to-html&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="104px" height="20px"></iframe>
+        <iframe src="http://ghbtns.com/github-btn.html?user=ellern&amp;type=follow&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="145px" height="20px"></iframe>
+    </div>
+</div>
