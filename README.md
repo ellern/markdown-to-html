@@ -5,8 +5,6 @@ Fetches a markdown file from a public resource or a private GitHub repo and prin
 
 Built using minimal ASP.NET MVC 5 footprint.
 
-[Demo running on Azure Websites](http://markdowntohtml.azurewebsites.net)
-
 Credits
 =======
 
